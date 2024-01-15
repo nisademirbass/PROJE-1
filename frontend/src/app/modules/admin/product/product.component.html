@@ -1,0 +1,35 @@
+<h4 class="border-bottom pb-2">Ürünler</h4>
+<div class="card">
+    <div class="card-header">
+        Ürünler
+        <a class="btn btn-sm btn-primary float-end" routerLink="/admin/product-save">Yeni Ürün Ekle</a>
+    </div>
+    <div class="card-body">       
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Ürün Adı</th>
+                        <th scope="col">Ürünün Birim Fiyatı</th>
+                        <th scope="col">Ürün Açıklaması</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let product of products" class="">
+                        <td scope="row">{{product.productName}}</td>
+                        <td>{{product.price | currency}}</td>
+                        <td>{{product.description}}</td>
+                        <td>
+                            <a class="btn btn-primary" [routerLink]="['/admin','product-save',product.productId]" role="button">Güncelle</a>
+                            <button (click)="remove(product.productId!)" type="button" class="btn btn-danger ms-2">Sil</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="card-footer text-muted">
+        Toplam <b>{{products.length}}</b> Adet ürün bulunmuştur.
+    </div>
+</div>
+

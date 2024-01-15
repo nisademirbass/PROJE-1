@@ -1,0 +1,33 @@
+<div class="card mt-4">
+    <div class="card-header">
+        Ürün Kayıt
+    </div>
+    <div class="card-body">
+        <form #frm="ngForm" ngForm (submit)="save()">
+            <div class="mb-3">
+              <label class="form-label">Ürün Adı</label>
+              <input [(ngModel)]="model.productName"  #name="ngModel" required name="name" type="text" class="form-control">
+              <div *ngIf="name.invalid  && name.dirty" class="form-text text-danger">Ürün adı zorunludur!</div>
+            </div>
+             <div class="mb-3">
+              <label class="form-label">Kategori</label>
+              <!-- <input ngModel #categoryId="ngModel" required name="categoryId" type="text" class="form-control"> -->
+              <select [(ngModel)]="model.categoryId" #categoryId="ngModel" required name="categoryId" class="form-select">
+                <option *ngFor="let category of categories" [value]="category.categoryId"> {{category.categoryName}} </option>
+              </select>
+              <div *ngIf="categoryId.invalid  && categoryId.dirty" class="form-text text-danger">Kategori zorunludur!</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Fiyat</label>
+                <input [(ngModel)]="model.price" #price="ngModel" required name="price" type="number"  min="0" class="form-control">
+                <div *ngIf="price.invalid  && price.dirty" class="form-text text-danger">Fiyat bilgisi zorunludur!</div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Açıklama</label>
+                <textarea [(ngModel)]="model.description" #description="ngModel" required name="description" rows="3" class="form-control"></textarea>
+                <div *ngIf="description.invalid  && description.dirty" class="form-text text-danger">Açıklama alanı zorunludur!</div>
+              </div>
+            <button type="submit" required [disabled] = "frm.invalid" class="btn btn-primary float-end">Kaydet</button>
+          </form>
+    </div>
+</div>

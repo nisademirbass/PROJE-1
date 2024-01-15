@@ -1,0 +1,139 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Makarna",
+      "categoryId": 1,
+      "description": "Nuhun ankara",
+      "price": 3,
+      "imageUrl": "https://dummyimage.com/100x100/6b6b6b/ffffff.png"
+    },
+    {
+      "id": 2,
+      "name": "Ekmek",
+      "categoryId": 1,
+      "description": "Halk ekmek",
+      "price": 10,
+      "imageUrl": "https://dummyimage.com/100x100/6b6b6b/ffffff.png"
+    },
+    {
+      "id": 3,
+      "name": "Yumurta",
+      "categoryId": 1,
+      "description": "1 koli 30 adet",
+      "price": 15,
+      "imageUrl": "https://dummyimage.com/100x100/6b6b6b/ffffff.png"
+    },
+    {
+      "id": 4,
+      "name": "Sehpa",
+      "categoryId": 2,
+      "description": "Zigon sehpa",
+      "price": 250,
+      "imageUrl": "https://dummyimage.com/100x100/6b6b6b/ffffff.png"
+    },
+    {
+      "id": 5,
+      "name": "Mutfak Takımı",
+      "categoryId": 2,
+      "description": "4 adet sandalye ile birlikte verilir",
+      "price": 600,
+      "imageUrl": "https://dummyimage.com/100x100/6b6b6b/ffffff.png"
+    },
+    {
+      "id": 6,
+      "name": "Laptop",
+      "categoryId": 3,
+      "description": "i7, 32 GB Ram, 250 GB SSD ",
+      "price": 5200,
+      "imageUrl": "https://dummyimage.com/100x100/6b6b6b/ffffff.png"
+    },
+    {
+      "id": 7,
+      "name": "Klavye",
+      "categoryId": 3,
+      "description": "Kablosuz Q Klavye",
+      "price": 200,
+      "imageUrl": "https://dummyimage.com/100x100/6b6b6b/ffffff.png"
+    },
+    {
+      "id": 8,
+      "name": "Mouse",
+      "categoryId": 3,
+      "description": "Kablosuz 5 tuşlu mouse",
+      "price": 45,
+      "imageUrl": "https://dummyimage.com/100x100/6b6b6b/ffffff.png"
+    },
+    {
+      "categoryId": "4",
+      "name": "Gömlek",
+      "price": 50,
+      "imageUrl": "https://dummyimage.com/100x100/ff1717/ffff05.png",
+      "description": "S Beden, Slim fit",
+      "id": 9
+    },
+    {
+      "categoryId": "4",
+      "name": "Kazak",
+      "price": 65,
+      "imageUrl": "https://dummyimage.com/100x100/ff1717/ffff05.png",
+      "description": "S Beden",
+      "id": 10
+    },
+    {
+      "categoryId": "5",
+      "name": "Citroen",
+      "price": 65000,
+      "imageUrl": "https://dummyimage.com/100x100/ffe419/ff0505.png&text=Citroen",
+      "description": "C4 Otomaik Vites Dizel",
+      "id": 11
+    },
+    {
+      "categoryId": "6",
+      "name": "Test",
+      "price": 50,
+      "imageUrl": "https://dummyimage.com/100x100/ff1717/ffff05.png",
+      "description": "Deneme",
+      "id": 12
+    },
+    {
+      "name": "Test 2",
+      "categoryId": "6",
+      "price": 60,
+      "imageUrl": "https://dummyimage.com/100x100/ff1717/ffff05.png",
+      "description": "test açıklama",
+      "id": 13
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Gıda"
+    },
+    {
+      "id": 2,
+      "name": "Mobilya"
+    },
+    {
+      "id": 3,
+      "name": "Elektronik"
+    },
+    {
+      "id": 4,
+      "name": "Giyim"
+    },
+    {
+      "id": 5,
+      "name": "Başka"
+    },
+    {
+      "id": 6,
+      "name": "Araç"
+    }
+  ],
+  "users":[{
+    "username": "fatmanur",
+    "password": "12345678",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkZhdG1hIE51ciBEZW1pcmJhcyIsInVzZXJuYW1lIjoiZmF0bWFudXIiLCJpYXQiOjE1MTYyMzkwMjIsImV4cCI6MTY5OTkzOTAyMn0.72LL2yblLdqb3ZampY_svrFGOlLhuKE2SDm3-6F1sZs"
+  }]
+}

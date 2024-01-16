@@ -21,8 +21,8 @@ public class OpenApiConfiguration {
 
     private Info apiInfo() {
         return new Info()
-                .title("Course Service")
-                .description("This Rest API developed for Circuit Breaker Pattern")
+                .title("Product Service")
+                .description("This Rest API developed for HND MARKET")
                 .version("By Fatma Nur Demirbas" + "/Version:" + version)
                 .license(apiLicence().name("License of API"))
                 .license(apiLicence().url("API license URL"));
